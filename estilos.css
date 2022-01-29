@@ -6,33 +6,50 @@
 
 
 
-.menuLinea i {
+.menuLinea--bars i {
     cursor: pointer;
   margin: 1rem;
+  
 }
 
 .menuActivo{
     background-color: #abf3a0 ;
-    display: none;
+    transition: all .5s ease;
+display: none;
 }
 
-.menuLineaActivo i{
+.disabled{
+    transform: translate(-800px);
+
+}
+
+
+.menuClose i{
     color: white;
     cursor: pointer;
     margin: 1rem;
+    transform: scale(1rem,2rem);
 }
-.lista{
+.menuClose:hover{
+    width: 50px;
+    background-color: red;
+}
+
+
+.lista li {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 18px;
-    width: 100%;
-}
-
-.lista li {
     list-style: none;
     margin-top: 2rem;
-
+   margin-bottom: 1rem;
+   width: 100vw;
+   height: 5vh;
+}
+.lista li:hover{
+    border: 2px solid #a4e69a;
+    background-color:  #99f18b;
 }
 
 .lista a { 
@@ -41,16 +58,13 @@
     text-decoration: none;
 }
 
-.lista li :hover{
-    border-bottom: 3px solid #08420d ;
-}
 
 
 .inputSearch{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 .input{
     height: 30px;
