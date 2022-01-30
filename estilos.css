@@ -1,6 +1,7 @@
 *{
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 
@@ -8,13 +9,13 @@
 
 .menuLinea--bars i {
     cursor: pointer;
-  margin: 1rem;
+  margin: 2.2rem;
   
 }
 
 .menuActivo{
-    background-color: #abf3a0 ;
-    transition: all .5s ease;
+    background-color:  rgb(153, 211, 73) ;
+    transition: all .2s ease-in-out;
 display: none;
 }
 
@@ -42,20 +43,23 @@ display: none;
     align-items: center;
     font-size: 18px;
     list-style: none;
-    margin-top: 2rem;
+margin-top: 1rem;
    margin-bottom: 1rem;
    width: 100vw;
    height: 5vh;
 }
 .lista li:hover{
-    border: 2px solid #a4e69a;
-    background-color:  #99f18b;
+    border: 2px solid rgb(139, 194, 87);
+    background-color:  rgb(101, 189, 19);
+    
 }
 
 .lista a { 
     color: white;
-    font-weight: bold  ;
+    font-weight: 400  ;
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
 }
 
 
@@ -67,27 +71,31 @@ display: none;
     margin-top: 1rem;
 }
 .input{
-    height: 30px;
+    height: 40px;
     width: 315px;
     border: none;
     padding: 1rem;
+    border-radius: 10px 0px 0px 10px
 }
 
 .search{
+    position: relative;
     cursor: pointer;
-    height: 30px;
+    height: 40px;
  width: 55px;   
  border: none;
  color: #bdecb6 ;
  background-color:#08420d ;
+ padding: 1rem;
+ border-radius: 0px 10px 10px 0px;
 }
-
-.iconos{
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+.search i{
+    position: absolute;
+    bottom: 12px;
+    left: 20px;
+}
+.iconos a{
+text-decoration: none;
 }
 
 
@@ -95,21 +103,27 @@ display: none;
     color: #25d366;
 }
 .instagram{
-  color: #d6249f;
-}
-.facebook{
-    color: #3b5998;
 
+    width: 30px;
+    height: 30px;
+
+}
+
+.facebook{
+  width: 30px;
+  height: 30px;
 }
 .logo img{
     width: 70px;
-    height: 75px;
+    height: 70px;
     background-color: white;
+    margin: 1rem;
 }
 
 .menuLinea{
     display: flex;
     flex-direction: row;
    justify-content: space-between;
+   align-items: center;
    position:sticky;
 }
