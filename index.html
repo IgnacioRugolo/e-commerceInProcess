@@ -9,7 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"> 
-     <link rel="stylesheet" href="estilos.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+     <link rel="stylesheet" href="estilosHeader.css">
+     <link rel="stylesheet" href="./estilosProductos.css">
+
 </head>
 
 <body>
@@ -27,6 +31,23 @@
         <div class="iconos">
         <a href=""><img src="./imagenes/logoFacebook.png" alt="Facebook" class="facebook"></a>
         <a href=""><img src="./imagenes/instagramLogo.png" alt="Instagram" class="instagram"></a>
+        <a href=""><img src="./imagenes/logowathsapp.png" alt="Wathsapp" class="wathsapp"></a>
+
+<div class="carrito--cartera">
+<img src="./imagenes/logoCartera.png" alt="Cartera." class="cartera">
+
+<div class="circulo"></div>
+
+<div class="carrito">
+<img src="./imagenes/logoClose.png" class="carritoClose" alt="Cerrar carrito.">
+
+</div>
+<!--
+<div class="finalizarCompra"> 
+    <button class="finalizarCompra--boton">Finalizar Compra</button> 
+</div>-->
+</div>
+</div>
         </div>
         </div>
 
@@ -69,6 +90,92 @@
 
 <section class="productos">
 
+    <div class="divProductos">
+
+        <div class="primerProducto">
+            <div class="primerProducto--imagen"> <img class="imgProducto" src='./imagenes/zanahorias.jpg' alt="Zanahorias."></div>
+
+               <h2 class="tituloProducto">1kg zanahorias </h2>
+               <div class="primerProducto--precioCantidad">
+                <select name="cantidad" id="cantidad" class="cantidad">
+                    <option value="">Elija la cantidad que quiere comprar</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+
+                <p class="precio">$125,00</p>
+            </div>
+
+          <button  class="botonComprar">AGREGAR AL CARRO</button>
+
+            </div>
+       
+
+
+        
+        <div class="primerProducto">
+            <div class="primerProducto--imagen"> <img src='./imagenes/papaBlanca.jpg' class="imgProducto" alt="Papa Blanca."></div>
+
+            
+
+               <h2 class="tituloProducto">1kg Papa blanca.</h2>
+               <div class="primerProducto--precioCantidad">
+                <select name="cantidad" id="cantidad" class="cantidad">
+                    <option value="">Elija la cantidad que quiere comprar</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+
+                <p class="precio">$85,00</p>
+            </div>
+
+         <button  class="botonComprar">  AGREGAR AL CARRO</button>
+
+            
+        </div>
+
+
+
+
+        <div>
+            <div> <img src="" alt=""></div>
+            <div> 
+                <h2>Producto 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eius sit voluptate. Expedita velit reprehenderit illum ut eos unde natus totam reiciendis non modi, earum, laboriosam dolor similique quam facere.</p>
+                <select name="cantidad" id="">
+                    <option value="">Elija la cantidad que quiere comprar</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+
+                </select>
+                <p>Precio</p>
+
+                 <button>Comprar</button>
+            </div>
+        </div>
+
+
+        <div>
+            <div> <img src="" alt=""></div>
+            <div> 
+                <h2>Producto 4</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eius sit voluptate. Expedita velit reprehenderit illum ut eos unde natus totam reiciendis non modi, earum, laboriosam dolor similique quam facere.</p>
+                <select name="cantidad" id="">
+                    <option value="">Elija la cantidad que quiere comprar</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+
+                </select>
+                <p>Precio</p>
+
+                 <button>Comprar</button>
+            </div>
+        </div>
+    </div>
 
 
 </section>
@@ -78,5 +185,6 @@
 
    <script src="./js/efectos.js"></script>
    <script src="./jquery.min.js"></script>
+   <script src="./js/carrito.js"></script>
 </body>
 </html>
