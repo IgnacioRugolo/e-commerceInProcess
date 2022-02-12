@@ -172,8 +172,8 @@ margin-top: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 3rem;
-   
+    margin-top: 1rem;
+  
 }
 .finalizarCompra--boton{
     width: 220px;
@@ -181,17 +181,24 @@ margin-top: 1rem;
      background-color: white;
      border: 1px solid;
      transition: all .5s ease-in;
+    position: inherit;
 }
 
 .finalizarCompra--boton:hover{
     background-color: rgb(153, 211, 73);
     border: none;
     cursor: pointer;
+
+}
+.finalizarCompra p {
+    font-size: 14px ;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
 }
 .divProductoEnCarrito{
     display: flex;
     flex-direction: row;
-    
+    position: relative;
 border-bottom: 1px solid black ;
 }
 
@@ -213,4 +220,36 @@ align-items: flex-end;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 12px;
+}
+
+.precioTotal{
+    border-bottom: 1px solid black;
+    width: 100%;
+    text-align: center;
+}
+
+.cantidadProducto{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+.eliminacionProducto{
+    background-color: red;
+    height: 3vh;
+    width: 2vw;
+    border: 1px solid black ;
+    border-radius: 6px 6px 6px 6px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.eliminacionProducto:hover{
+    color: white;
+    cursor: pointer;
+}
+.juntePrecioCantidad{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around !important;
 }

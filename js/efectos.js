@@ -23,6 +23,8 @@ menuLineaActivo.addEventListener('click', function(){
 })
 
 
+carritoCartera.setAttribute('style', 'display: none;')
+
 logoCartera.addEventListener('click', function(){
 carritoCartera.setAttribute('style', 'display:block ;')
 
