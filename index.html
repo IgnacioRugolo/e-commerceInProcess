@@ -17,7 +17,8 @@
 </head>
 
 <body>
-
+<script src="./js/center.js" type="module"></script>
+ 
     <header>
 
         <div class="menuLinea" > 
@@ -38,23 +39,31 @@
 
 <div class="circulo"></div>
 
-<div class="carrito">
+<div class="carrito" id="cart">
 <img src="./imagenes/logoClose.png" class="carritoClose" alt="Cerrar carrito.">
-<div class="finalizarCompra"> 
-</div>
-
-<div class="carrito2">
+<div class="finalizarCompra" id="finalizeBuy"> 
 
 </div>
 </div>
-<!--
--->
+
+</div>
+
 </div>
 </div>
         </div>
         </div>
 
 
+
+
+
+
+
+
+
+
+
+<!----------------------------------------------MENU HAMBURGUESA------------------------------------------------------>
 
         <div class="menuActivo disabled" >
 
@@ -86,80 +95,115 @@
 
         </div>
 
-        <nav></nav>
 
     </header>
 
 
+
+
+
 <section class="productos">
 
-    <div class="divProductos">
+    <div class="divProductos" id="divProducts">
 
-        <div class="primerProducto">
-             <img class="imgProducto" src='./imagenes/zanahorias.jpg' alt="Zanahorias.">
 
-               <h2 class="tituloProducto">1kg zanahorias </h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+        <div class="primerProducto" id="product">
+            <span class="id" id="idProduct" type="number" value="1"> </span>
+             <img class="imgProducto" id="imgProduct" src='./imagenes/zanahorias.jpg' alt="Zanahorias.">
+
+               <h2 class="tituloProducto" id="titleProduct">1kg zanahorias</h2>
                <div class="primerProducto--precioCantidad">
-                <select name="cantidad" id="cantidad" type="number" class="cantidad">
-                    <option value="1">Elija la cantidad que quiere comprar</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
+                <select name="cantidad" id="quantity" type="number" class="cantidad">
+                    <option name="cantidad" value="1">Elija la cantidad que quiere comprar</option>
+                    <option name="cantidad" value="1">1</option>
+                    <option name="cantidad" value="2">2</option>
+                    <option name="cantidad" value="3">3</option>
                 </select>
 
-                <p class="precio" >$125</p>
+                <p class="precio" id="price">125</p>
+                <p id="symbolCash">$</p>
             </div>
 
-          <button  class="botonComprar">AGREGAR AL CARRO</button>
+          <button  class="botonComprar" id="buttonBuy">AGREGAR AL CARRO</button>
 
             </div>
        
 
 
         
-        <div class="primerProducto">
-            <div class="primerProducto--imagen"> <img src='./imagenes/papaBlanca.jpg' class="imgProducto" alt="Papa Blanca."></div>
+        <div class="primerProducto" id="product">
+            <div class="primerProducto--imagen"> <img src='./imagenes/papaBlanca.jpg' class="imgProducto" id="imgProduct" alt="Papa Blanca."></div>
 
             
 
-               <h2 class="tituloProducto">1kg Papa blanca.</h2>
+               <h2 class="tituloProducto" id="titleProduct">1kg Papa blanca.</h2>
                <div class="primerProducto--precioCantidad">
-                <select name="cantidad" type="number" id="cantidad" class="cantidad" >
-                    <option value="1" >Elija la cantidad que quiere comprar</option>
-                    <option value="1" >1</option>
-                    <option value="2" >2</option>
-                    <option value="3" >3</option>
+                <select name="cantidad" type="number" id="quantity" class="cantidad" >
+                    <option name="cantidad" value="1" >Elija la cantidad que quiere comprar</option>
+                    <option name="cantidad"value="1" >1</option>
+                    <option name="cantidad"value="2" >2</option>
+                    <option name="cantidad" value="3" >3</option>
                 </select>
 
-                <p class="precio" >$85</p>
+                <p class="precio" id="price">85</p>
+                <p id="symbolCash">$</p>
             </div>
 
-         <button  class="botonComprar">  AGREGAR AL CARRO</button>
-
+         <button  class="botonComprar" id="buttonBuy">  AGREGAR AL CARRO</button>
+-->
             
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!--   
 
         <div>
             <div> <img src="" alt=""></div>
@@ -199,14 +243,14 @@
         </div>
     </div>
 
+-->    </div>
 
 </section>
 
 
-   
-
-   <script src="./js/efectos.js"></script>
+  <script src="./js/efectos.js"></script>
    <script src="./jquery.min.js"></script>
-   <script src="./js/carrito.js"></script>
+  <!-- <script src="./js/carrito.js"></script>   -->
+
 </body>
 </html>
